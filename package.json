@@ -4,9 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && cp src/index.html dist/ && cp src/style.css dist/",
-    "preview": "vite preview"
+    "build": "tsc && vite build",
+    "predeploy": "npm run build"
   },
   "devDependencies": {
     "typescript": "^5.8.3",
