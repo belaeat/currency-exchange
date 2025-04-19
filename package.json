@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && cp src/index.html dist/ && cp src/style.css dist/",
     "preview": "vite preview"
   },
   "devDependencies": {
