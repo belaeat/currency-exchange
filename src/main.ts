@@ -1,3 +1,5 @@
+"use strict";
+
 interface Data {
   conversion_rates: Record<string, number>;
 }
@@ -8,10 +10,6 @@ class FetchWrapper {
   constructor(baseURL: string) {
     this.baseURL = baseURL;
   }
-
-  // get(endpoint: string): Promise<Data> {
-  //   return fetch(this.baseURL + endpoint).then((response) => response.json());
-  // }
 
   async get(endpoint: string): Promise<Data> {
     try {
