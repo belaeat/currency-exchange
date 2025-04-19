@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Exchange Rates</title>
+    <link rel="stylesheet" href="src/style.css" type="text/css" />
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <a href="" class="nav-brand">Currencies Exchange Rates</a>
+      <ul>
+        <li class="nav-item"><a href="about.html">About us</a></li>
+        <li><a href="" class="nav-item btn btn-default">Register</a></li>
+      </ul>
+    </nav>
+
+    <div class="container" id="main">
+      <p>
+        Select the base currency and the target currency and we'll show you the
+        conversion rate.
+      </p>
+      <div class="grid">
+        <div>
+          <label for="base-currency">Base currency:</label>
+          <select id="base-currency">
+            <option value="USD">United States Dollar ($)</option>
+            <option value="EUR">Euro (€)</option>
+            <option value="CAD">Canadian Dollar (C$)</option>
+            <option value="INR">Indian Rupee (₹)</option>
+            <option value="NPR">Nepalese Rupee (₹)</option>
+          </select>
+          <input type="number" id="amount" placeholder="Enter amount" min="0" />
+        </div>
+        <div>
+          <button id="swap" class="swap-button">&#x2194;</button>
+        </div>
+        <div>
+          <label for="target-currency">Target currency:</label>
+          <select id="target-currency">
+            <option value="USD">United States Dollar ($)</option>
+            <option value="EUR">Euro (€)</option>
+            <option value="CAD">Canadian Dollar (C$)</option>
+            <option value="INR">Indian Rupee (₹)</option>
+            <option value="NPR">Nepalese Rupee (₹)</option>
+            <option value="BDT">Bangladeshi Taka</option>
+          </select>
+          <input
+            type="number"
+            id="converted-amount"
+            placeholder="Converted amount"
+            min="0"
+          />
+        </div>
+      </div>
+      <h3>Conversion History</h3>
+      <ul id="history"></ul>
+    </div>
+
+    <footer id="footer-wrapper">
+      <a href="#" target="_blank">About us</a>
+      <a href="#" target="_blank">Contact us</a>
+    </footer>
+  </body>
+  <script type="text/javascript" src="src/main.ts"></script>
+</html>
